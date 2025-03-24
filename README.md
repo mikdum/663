@@ -5,13 +5,13 @@ Edellisessä projektissa (#662 Use Case -kaavion piirtäminen) piirsit käyttöt
 
 Tee käyttötapauskaavion pohjalta käyttötapauskuvaukset. Voit tehdä ne MarkDown-dokumenttiin. Muista tehdä kuvaus jokaisesta käyttötapauksesta. Kuvaa ainakin seuraavat asiat:
 
-*Käyttötapauksen nimi
-*Käyttäjät
-*Laukaisija
-*Esiehto
-*Jälkiehto
-*Käyttötapauksen kulku
-*Poikkeuksellinen toiminta
+* Käyttötapauksen nimi
+* Käyttäjät
+* Laukaisija
+* Esiehto
+* Jälkiehto
+* Käyttötapauksen kulku
+* Poikkeuksellinen toiminta
 
 Käytä samaa GitHub-repositoryä.
 
