@@ -1,108 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Site</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-</head>
-
-<body>
-    <section class="h-100 gradient-form" style="background-color: #eee;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                    <div class="card rounded-3 text-black">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bootstrap Site</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+         crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="styles.css">
+      <script src="main.js" defer></script>
+   </head>
+   <body>
+        <div id="loginform">
+         <section class="h-100 gradient-form" style="background-color: #eee;">
+            <div class="container py-5 h-100">
+               <div class="row d-flex justify-content-center align-items-center h-100">
+                  <div class="col-xl-10">
+                     <div class="card rounded-3 text-black">
                         <div class="row g-0">
-                            <div class="col-lg-6">
-                                <div class="card-body p-md-5 mx-md-4">
-
-                                    <div class="text-center">
-                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
-                                            style="width: 185px;" alt="logo">
-                                        <h4 class="mt-1 mb-5 pb-1">#663 Ohjelmiston toteutus UseCase-kaavion pohjalta
-                                        </h4>
+                           <div class="col-lg-6">
+                              <div class="card-body p-md-5 mx-md-4">
+                                 <div class="text-center">
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                                       style="width: 185px;" alt="logo">
+                                    <h4 class="mt-1 mb-5 pb-1">#663 Ohjelmiston toteutus UseCase-kaavion
+                                       pohjalta
+                                    </h4>
+                                 </div>
+                                 <form>
+                                    <p>Please login to your account</p>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                       <input type="email" id="userlogin" class="form-control"
+                                          placeholder="Phone number or email address" />
+                                       <label class="form-label" for="userlogin">Username</label>
                                     </div>
-
-                                    <form>
-                                        <p>Please login to your account</p>
-
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="email" id="form2Example11" class="form-control"
-                                                placeholder="Phone number or email address" />
-                                            <label class="form-label" for="form2Example11">Username</label>
-                                        </div>
-
-                                        <div data-mdb-input-init class="form-outline mb-4">
-                                            <input type="password" id="form2Example22" class="form-control" />
-                                            <label class="form-label" for="form2Example22">Password</label>
-                                        </div>
-
-                                        <div class="text-center pt-1 mb-5 pb-1">
-                                            <button data-mdb-button-init data-mdb-ripple-init
-                                                class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
-                                                type="button">Log in</button>
-                                            <a class="text-muted" href="#!">Forgot password?</a>
-                                        </div>
-
-                                        <div class="d-flex align-items-center justify-content-center pb-4">
-                                            <p class="mb-0 me-2">Don't have an account?</p>
-                                            <button type="button" data-mdb-button-init data-mdb-ripple-init
-                                                class="btn btn-outline-danger" id="btn_createNew" onclick="createNew()">Create new</button>
-                                        </div>
-                                        <p class="text-center">©Mikhail Dumma. (esedu project)</p>
-                                    </form>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
-                                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                    <h4 class="mb-4">Kuvaus</h4>
-                                    <div>
-                                        <p>Edellisessä projektissa (<a title="#662 Use Case -kaavion piirtäminen"
-                                                href="/projects/details/662" target="_blank" rel="noopener">#662 Use
-                                                Case -kaavion piirtäminen</a>) piirsit käyttötapauskaavion. Jatka siitä
-                                            seuraaviin vaiheisiin.&nbsp;</p>
-                                        <p>Tee käyttötapauskaavion pohjalta käyttötapauskuvaukset. Voit tehdä ne
-                                            MarkDown-dokumenttiin. Muista tehdä kuvaus jokaisesta käyttötapauksesta.
-                                            Kuvaa ainakin seuraavat asiat:</p>
-                                        <ul>
-                                            <li>Käyttötapauksen nimi</li>
-                                            <li>Käyttäjät</li>
-                                            <li>Laukaisija</li>
-                                            <li>Esiehto</li>
-                                            <li>Jälkiehto</li>
-                                            <li>Käyttötapauksen kulku</li>
-                                            <li>Poikkeuksellinen toiminta</li>
-                                        </ul>
-                                        <p>Käytä samaa GitHub-repositoryä.</p>
-                                        <p>Kun käyttötapauskuvaukset on valmiit, toteuta niiden pohjalta käyttöliittymät
-                                            HTML/CSS-koodilla. Voit halutessasi käyttää myös Bootstrap-kirjastoa.
-                                            Sovelluksen täytyy olla toimiva prototyyppi, eli käyttöliittymän täytyy
-                                            toimia. Ulkoisia tietovarastoja ei tarvitse käyttää.</p>
-                                        <p>Palauta projekti GitHub-linkkinä.&nbsp;</p>
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                       <input type="password" id="userpassword" class="form-control" />
+                                       <label class="form-label" for="userpassword">Password</label>
                                     </div>
-
-
-
+                                    <div class="text-center pt-1 mb-5 pb-1">
+                                       <button data-mdb-button-init data-mdb-ripple-init
+                                          class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                          type="button" onclick="loginUser()">Log in</button>
+                                       <a href="#" class="link-secondary" data-toggle="modal"
+                                          data-target="#forgotPasswordModal" >Forgot password?</a>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center pb-4">
+                                       <p class="mb-0 me-2">Don't have an account?</p>
+                                       <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                          class="btn btn-outline-danger" data-toggle="modal"
+                                          data-target="#createNewUserModal">Create new</button>
+                                    </div>
+                                    <p class="text-center">©Mikhail Dumma. (esedu project)</p>
+                                 </form>
+                              </div>
+                           </div>
+                           <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                                 <h4 class="mb-4">Kuvaus</h4>
+                                 <div>
+                                    <p>Edellisessä projektissa
+                                       <a href="https://ossi.esedu.fi/projects/details/662"
+                                          class="link-light">(#662 Use Case -kaavion piirtäminen)</a>
+                                       piirsit käyttötapauskaavion. Jatka siitä
+                                       seuraaviin vaiheisiin.&nbsp;
+                                    </p>
+                                    <p>Tee käyttötapauskaavion pohjalta käyttötapauskuvaukset. Voit tehdä ne
+                                       MarkDown-dokumenttiin. Muista tehdä kuvaus jokaisesta käyttötapauksesta.
+                                       Kuvaa ainakin seuraavat asiat:
+                                    </p>
+                                    <ul>
+                                       <li>Käyttötapauksen nimi</li>
+                                       <li>Käyttäjät</li>
+                                       <li>Laukaisija</li>
+                                       <li>Esiehto</li>
+                                       <li>Jälkiehto</li>
+                                       <li>Käyttötapauksen kulku</li>
+                                       <li>Poikkeuksellinen toiminta</li>
+                                    </ul>
+                                    <p>Käytä samaa GitHub-repositoryä.</p>
+                                    <p>Kun käyttötapauskuvaukset on valmiit, toteuta niiden pohjalta
+                                       käyttöliittymät
+                                       HTML/CSS-koodilla. Voit halutessasi käyttää myös Bootstrap-kirjastoa.
+                                       Sovelluksen täytyy olla toimiva prototyyppi, eli käyttöliittymän täytyy
+                                       toimia. Ulkoisia tietovarastoja ei tarvitse käyttää.
+                                    </p>
+                                    <p>Palauta projekti GitHub-linkkinä.&nbsp;</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <div id="quizform" class="d-none">
+         <div class="container">
+            <div class='d-flex justify-content-between'>
+               <button type="button" data-mdb-button-init data-mdb-ripple-init
+                  class="btn btn-primary fa-lg gradient-custom-2 mb-3" data-toggle="modal"
+                  data-target="#addPollModal" id="addPollbutton">Add poll</button>
+               <button class="btn btn-primary fa-lg gradient-custom-2 mb-3" type="button" onclick="logout()">kirjaudu ulos</button>
+            </div>
+            <div class="row justify-content-start">
+               <div class="col-md-auto">
+                  <table class="table table-hover" id="pollsTable">
+                     <tr>
+                        <th>#</th>
+                        <th>title</th>
+                     </tr>
+                  </table>
+               </div>
+               <div class="col-md-auto">
+                  <div class="form-group row">
+                     <div class="card d-none" id="panelinputpoll">
+                        <h5 class="card-header text-center" id="titlecurrentpoll">
+                           blank
+                        </h5>
+                        <div class="card card-body" >
+                           <div id="radioboxes">
+                              <div class="form-check" id="formcheckradio">
+                                 <input class="form-check-input" type="radio" name="flexRadioDefault" value="0"
+                                    id="flexRadioDefault0">
+                                 <label class="form-check-label" for="flexRadioDefault0"
+                                    id="flexRadioDefaultlabel0">
+                                 blank
+                                 </label>
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-primary" onclick="Submit()">Submit</button>
+                        </div>
+                     </div>
+                     <div class="card d-none" id="paneloutputpoll">
+                        <h5 class="card-header text-center" id="paneloutputpolltitle">
+                            blank
+                         </h5>
+                        <div class="card card-body" id="paneloutputpollbody">
+                            <div class="border border-primary m-1 p-1" id="containerprogress">
+                                <h5>aaaaa</h5>
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="height: 50px">
+                                   <div class="progress-bar overflow-x-visible" style=" width: 25%">25%</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-</body>
-
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog"
+         aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="forgotPasswordModalLabel">Password reminder</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"  onclick="closemodal('forgotPasswordModal')">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <h1> Hi!</h1>
+                  <p>You can call techsupport</p>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="createNewUserModal" tabindex="-1" role="dialog"
+         aria-labelledby="createNewUserModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="createNewUserModalLabel">Add users accounts</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closemodal('createNewUserModal')">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div>
+                     <div class="row gx-5">
+                        <div class="col-lg-6">
+                           <div class="p-6">
+                              <form class="m-6">
+                                 <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="formUsername" class="form-control"
+                                       placeholder="Phone number or email address" />
+                                    <label class="form-label" for="formUsername">Username</label>
+                                 </div>
+                                 <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="formUserpassword" class="form-control" />
+                                    <label class="form-label" for="formUserpassword">Password</label>
+                                 </div>
+                                 <div class="text-center pt-1 mb-5 pb-1">
+                                    <div class="form-check text-left">
+                                       <input class="form-check-input" type="checkbox" value=""
+                                          id="checksuperuser">
+                                       <label class="form-check-label" for="checksuperuser">Super user</label>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <table class="table table-striped" id="usersTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">User</th>
+                                    <th scope="col">Super user </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-primary" onclick="addUser()">Add user</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="addPollModal" tabindex="-1" role="dialog" aria-labelledby="addPollModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="addPollModalLabel">Kyselyn lisääminen</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closemodal('addPollModal')">
+               <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+                  <div class="form-group row">
+                     <label for="title" class="col-sm-2 col-form-label">Aihe</label>
+                     <div class="col-sm-10">
+                        <input type="text" class="form-control" id="title">
+                     </div>
+                     <table class="table table-striped" id="vaihtoehtoTable">
+                        <thead>
+                           <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">vaihtoehto</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                     </table>
+                     <button class="btn btn-secondary" id="btn_lisäävaihtoehto" onclick="lisäävaihtoehto()">Lisäävaihtoehto</button>
+                    </div> 
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" onclick="addPoll()">Add poll</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </body>
 </html>
