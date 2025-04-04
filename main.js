@@ -21,7 +21,7 @@ function testPart() {
     // test part
     currentuser = { 'name': "username", 'password': "formUserpassword", 'superuser': true };
 
-    var poll = new Poll("1 question");
+    var poll = new Poll("test example 1");
     poll.totalcount = 10;
 
     poll.addAnswer("1 answer", 3);
@@ -32,7 +32,7 @@ function testPart() {
 
     polls.push(poll);
 
-    poll = new Poll("2 question1111111111111111111111111111111111111111111");
+    poll = new Poll("test example 2");
     poll.totalcount = 18;
     poll.addAnswer("1/2 answer", 3);
     poll.addAnswer("2/2 answer", 15);
@@ -68,6 +68,17 @@ function addpollonscrine(poll, i) {
 
 function deleteRow(row, tablediscription) {
     //let row =buttonelement.parentElement;
+
+    switch (tablediscription){
+        case 'usersTable':
+            users=users.filter((e,i)=>i!=(row.rowIndex-1))
+        break;
+        case 'pollsTable':
+            polls=polls.filter((e,i)=>i!=(row.rowIndex-1))
+        break;
+
+    }
+
 
     var table = document.getElementById(tablediscription);
 
